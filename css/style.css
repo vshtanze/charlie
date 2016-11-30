@@ -40,6 +40,9 @@
 }
 
 /* ----- menu ----- */
+.menu-place-holder {
+	height: 72px;
+}
 .stickytop-menu {
 	position: fixed;
 	top: 0;
@@ -52,7 +55,8 @@
 }
 .menu-div {
 	padding-top: 20px;
-	background-color: white;
+	background-color: #373a3e;
+	height: 72px;
 }
 .menu-div ul {
 	padding: 0px 5% 0px 5%;

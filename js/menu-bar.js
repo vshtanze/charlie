@@ -22,10 +22,12 @@ $(document).ready(function() {
 				}
 			} else {
 				if ($('#menu-ul').css("display") == "none") {
+					$('#menu-place-holder').css({height: "259px"});
 					$('#menu-ul').css({display: "block"});
 					$('#menu').css({height: "auto"});
 					$('#menu-wrapper').css({height: "auto"});
 				} else {
+					$('#menu-place-holder').css({height: "72px"});
 					$('#menu-ul').css({display: "none"});
 					$('#menu').css({height: "72px"});	
 				}
