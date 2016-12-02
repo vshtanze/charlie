@@ -3,62 +3,22 @@
 	<div class="col-md-12">
 		<div class="catalog-div">
 			<div class="row">
+			<?
+				include("../php/DB.php");
+				$db = new DB();
+				$cars = $db->getCars();
+				foreach($cars as $item):
+			?>
 				<div class="col-md-4">
 					<div class="catalog-item" onclick="document.location='description.html'">
-						<img class="img-responsive" src="images/main-slider/1.jpg"></img>
-						<p>
-							<h3>Chevrolet Camaro</h3>	
-						<p>
-							$ 50.000
+						<img class="img-responsive" src="<? echo $item['image1']; ?>"></img>
+						<p><h3><? echo $item['title']; ?></h3></p>	
+						<p>$ <? echo $item['price']; ?></p>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="catalog-item" onclick="document.location='description.html'">
-						<img class="img-responsive" src="images/main-slider/1.jpg"></img>
-						<p>
-							<h3>Chevrolet Camaro</h3>	
-						<p>
-							$ 50.000
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="catalog-item" onclick="document.location='description.html'">
-						<img class="img-responsive" src="images/main-slider/1.jpg"></img>
-						<p>
-							<h3>Chevrolet Camaro</h3>	
-						<p>
-							$ 50.000
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="catalog-item" onclick="document.location='description.html'">
-						<img class="img-responsive" src="images/main-slider/1.jpg"></img>
-						<p>
-							<h3>Chevrolet Camaro</h3>	
-						<p>
-							$ 50.000
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="catalog-item" onclick="document.location='description.html'">
-						<img class="img-responsive" src="images/main-slider/1.jpg"></img>
-						<p>
-							<h3>Chevrolet Camaro</h3>	
-						<p>
-							$ 50.000
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="catalog-item" onclick="document.location='description.html'">
-						<img class="img-responsive" src="images/main-slider/1.jpg"></img>
-						<p>
-							<h3>Chevrolet Camaro</h3>	
-						<p>
-							$ 50.000
-					</div>
-				</div>
+			<?
+				endforeach;
+			?>
 			</div>
 		</div>
 	</div>
