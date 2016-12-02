@@ -17,7 +17,7 @@
 			$querySQL = "";
 			$dbManager = new DBManager();
 			$dbManager->openConnection();
-			$resultArray = resultToArray($dbManager->querySelect($querySQL));
+			$resultArray = $this->resultToArray($dbManager->querySelect($querySQL));
 			$dbManager->closeConnection();	
 			return $resultArray;
 		}

@@ -4,7 +4,7 @@
 		<div class="catalog-div">
 			<div class="row">
 			<?
-				include("../php/DB.php");
+				include("/php/DB.php");
 				$db = new DB();
 				$cars = $db->getCars();
 				foreach($cars as $item):
