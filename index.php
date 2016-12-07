@@ -27,6 +27,10 @@
 				case 'contact-us':	
 					$viewPath = 'pages/contact-us.html';
 					break;
+				case 'description':	{
+					$viewPath = 'pages/description.php';
+					break;
+				}
 				
 				
 			}
@@ -40,5 +44,6 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- Scripts -->
 		<script src="js/menu-bar.js"></script>
+		<script src="js/zoom-img.js"></script>
 	</body>
 </html>

@@ -10,12 +10,13 @@
 				foreach($cars as $item):
 			?>
 				<div class="col-md-4">
-					<div class="catalog-item" onclick="document.location='description.html'">
-						<img class="img-responsive" src="<? echo $item['image1']; ?>"></img>
+					<div class="catalog-item" onclick="document.location='index.php?view=description&id=<? echo $item['id']; ?>'">
+						<img style="height: 200px; width: auto;" src="<? echo $item['image1']; ?>"></img>
 						<p><h3><? echo $item['title']; ?></h3></p>	
 						<p>$ <? echo $item['price']; ?></p>
 					</div>
 				</div>
+				
 			<?
 				endforeach;
 			?>
