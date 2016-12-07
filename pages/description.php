@@ -5,7 +5,7 @@
 ?>
 	<div class="row">
 		<div class="description-div">
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="description-item-img">
@@ -28,12 +28,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="description-item-img" id="zoom-div">
-					<img id="zoom-img" alt="" src=""></img>
-				</div>
-			</div>
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<div class="description-text-div">
 					<h3><? echo $car[0]['title']; ?></h3>
 					<p>
@@ -46,5 +41,8 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="description-item-img-zoom" id="zoom-div">
+		<img id="zoom-img" alt="" src=""></img>
 	</div>
 	

@@ -2,10 +2,12 @@ function zoom(zoomImg, zoomDiv, imgTarget) {
 				
 	$( imgTarget ).mouseover(function ( event ) {
 		$( zoomImg ).attr("src", $( imgTarget ).attr("src"));
+		if ($( window ).width() > 1023) $( zoomDiv ).css("display", "block");
 	});
 			
 	$( imgTarget).mouseout(function ( event ) {
 		$( zoomImg ).attr("src", "");
+		$( zoomDiv ).css("display", "none");
 	});
 			
 	$( imgTarget ).mousemove(function ( event ) {
