@@ -1,13 +1,17 @@
 $(document).ready(function() {
 	var navPosition =  $('#menu').offset().top;
-    $(window).scroll(function() {
-        if($(this).scrollTop() >  (navPosition)) {
-            $('#menu').addClass('stickytop-menu');
-        }
-        else {
-			$('#menu').removeClass('stickytop-menu');
-        }
-    });
+	if ($(window).width() >= 500) {
+		$(window).scroll(function() {
+			if($(this).scrollTop() >  (navPosition)) {
+				$('#menu').addClass('stickytop-menu');
+			}
+			else {
+				$('#menu').removeClass('stickytop-menu');
+			}
+		});
+	} else {
+		$('#menu').addClass('stickytop-menu');
+	}
 	
 	$('#burger-button').click(
 		function(event) {
